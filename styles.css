@@ -9,23 +9,26 @@
   display: inline-block;
 
 }
-.Tossbtn{
+.Btn{
   color: #4ECCA3;
   background-color: #393E46;
   border-color: #4ECCA3;
   margin: 20px;
   font-size: 1.25rem;
   font-weight: bold;
+  font-size: 1.5rem;
 }
 body {
   background-color: #393E46;
 }
-
-h1 {
+#Resetbtn{
+  display: none;
+}
+h2 {
   margin: 30px;
   font-family: 'Lobster', cursive;
   text-shadow: 5px 0 #232931;
-  font-size: 8rem;
+  font-size: 5rem;
   color: #4ECCA3;
 }
 
@@ -44,5 +47,12 @@ footer {
   color: #EEEEEE;
   text-align: center;
   font-family: 'Indie Flower', cursive;
-
+}
+input{
+  margin: 15px;
+  border-radius: 18px;
+  padding: 2% 5%;
+  background-color: inherit;
+  border-color: #4ECCA3;
+  color: #4ECCA3;
 }
