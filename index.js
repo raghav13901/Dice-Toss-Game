@@ -32,9 +32,11 @@ function toss() {
 }
 
 function ResetName() {
+  p1.value="";
+  p2.value="";
   document.querySelector("h2").innerHTML = "Enter Your Name , Then Click Toss";
-  document.getElementById("pn1").innerHTML = "";
-  document.getElementById("pn2").innerHTML = "";
+  document.getElementById("pn1").innerHTML = p1.value;
+  document.getElementById("pn2").innerHTML = p2.value;
   document.getElementById("p1").style.display = "inline-block";
   document.getElementById("p2").style.display = "inline-block";
   document.querySelector(".img1").src = "images/dice6.png";
