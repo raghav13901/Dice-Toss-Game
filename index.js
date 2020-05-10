@@ -32,8 +32,8 @@ function toss() {
 }
 
 function ResetName() {
-  p1.value="";
-  p2.value="";
+  p1.value=" ";
+  p2.value=" ";
   document.querySelector("h2").innerHTML = "Enter Your Name , Then Click Toss";
   document.getElementById("pn1").innerHTML = p1.value;
   document.getElementById("pn2").innerHTML = p2.value;
