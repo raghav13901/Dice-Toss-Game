@@ -64,9 +64,11 @@ input{
     font-size: 200%;
   }
   img{
-    width:60%;
+    width:70%;
   }
   input{
     margin-top: 40px;
+    width:60%;
+    max-widthh:70%;
   }
 }
