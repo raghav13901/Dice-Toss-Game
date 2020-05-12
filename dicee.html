@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Dicee</title>
-    <meta name="description" content="Toss Game">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
-    <link rel="icon" href="https://image.flaticon.com/icons/svg/2228/2228381.svg">
-  </head>
-  <body>
-    <div class="container">
-      <h2>Enter Your Name , Then Click Toss</h2>
-      <button type="button" name="button" class=" btn-lg Tossbtn Btn" onclick="toss()" id="Tossbtn ">Toss</button>
-      <button type="button" name="button" class=" btn-lg ResetBtn Btn" onclick="ResetName()" id="Resetbtn">Reset</button>
+
+<head>
+  <meta charset="utf-8">
+  <title>Dicee</title>
+  <meta name="description" content="Toss Game">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+  <link rel="icon" href="https://image.flaticon.com/icons/svg/2228/2228381.svg">
+</head>
+
+<body class="light">
+  <div class="container">
+    <h2>Enter Your Name , Then Click Toss</h2>
+    <button type="button" name="button" class=" btn-lg Tossbtn Btn light" onclick="toss()" id="Tossbtn ">Toss</button>
+    <button type="button" name="button" class=" btn-lg Namebtn Btn light" onclick="ResetName()" id="Resetbtn">Reset</button>
     <div>
+      <div class="custom-control custom-switch toggle">
+        <input type="checkbox" class="custom-control-input " id="customSwitch1" onclick="darkMode()">
+        <label class="custom-control-label" for="customSwitch1">Dark Mode</label>
+      </div>
       <div class="dice">
-        <input type="text" name="player1" placeholder="Name-Player1" id="p1" required>
+        <input type="text" name="player1" placeholder="Name-Player1" id="p1" class="light" required>
         <p id="pn1"></p>
         <img class="img1" src="images\dice6.png" alt="Dice-6">
       </div>
 
       <div class="dice">
-        <input type="text" name="player1" placeholder="Name-Player2" id="p2" required>
+        <input type="text" name="player1" placeholder="Name-Player2" id="p2" class="light" required>
         <p id="pn2"></p>
         <img class="img2" src="images\dice6.png" alt="Dice-6">
       </div>
     </div>
-    </div>
+  </div>
 
   <script src="index.js" charset="utf-8"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+</body>
 
-  <footer>
-    By Raghav Khatoria
-  </footer>
+<footer class="light">
+  By Raghav Khatoria
+</footer>
+
 </html>
