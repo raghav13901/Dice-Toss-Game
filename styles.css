@@ -1,3 +1,22 @@
+.dark{
+  color: #4ECCA3;
+  background-color: #393E46;
+  border-color: #4ECCA3;
+}
+footer .dark{
+  color: #EEEEEE;
+}
+footer.light{
+  color: #b35e40;
+}
+.light{
+  background-color: #fff3cd;
+  color: #ff926b;
+  border-color: #ff926b;
+}
+.error{
+  color: #c3030a;
+}
 .container {
   width: 80%;
   margin: auto;
@@ -10,16 +29,10 @@
 
 }
 .Btn{
-  color: #4ECCA3;
-  background-color: #393E46;
-  border-color: #4ECCA3;
   margin: 20px;
   font-size: 1.25rem;
   font-weight: bold;
   font-size: 1.5rem;
-}
-body {
-  background-color: #393E46;
 }
 #Resetbtn{
   display: none;
@@ -28,13 +41,16 @@ h2 {
   margin: 30px;
   font-family: 'Lobster', cursive;
   text-shadow: 5px 0 #232931;
-  font-size: 5rem;
-  color: #4ECCA3;
+  font-size: 4rem;
 }
-
+.toggle{
+  font-size:85%;
+  position: fixed;
+  top: 8%;
+  right: 6%;
+}
 p {
   font-size: 2rem;
-  color: #4ECCA3;
   font-family: 'Indie Flower', cursive;
 }
 
@@ -56,19 +72,20 @@ input{
   border-radius: 18px;
   padding: 2% 6%;
   background-color: inherit;
-  border-color: #4ECCA3;
-  color: #4ECCA3;
 }
 @media screen and (max-width:600px) {
   h2{
-    font-size: 200%;
+    font-size: 250%;
   }
   img{
-    width:70%;
+    width:60%;
   }
   input{
     margin-top: 40px;
-    width:60%;
-    max-widthh:70%;
+  }
+  .toggle{
+    position: absolute;
+    right: 0px;
+    top: 190px;
   }
 }
