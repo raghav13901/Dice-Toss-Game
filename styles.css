@@ -85,7 +85,7 @@ input{
   }
   .toggle{
     position: absolute;
-    right: 0px;
+    right: 10px;
     top: 190px;
   }
 }
