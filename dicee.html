@@ -17,11 +17,11 @@
     <h2>Enter Your Name , Then Click Toss</h2>
     <button type="button" name="button" class=" btn-lg Tossbtn Btn light" onclick="toss()" id="Tossbtn ">Toss</button>
     <button type="button" name="button" class=" btn-lg Namebtn Btn light" onclick="ResetName()" id="Resetbtn">Reset</button>
+    <div class="custom-control custom-switch toggle">
+      <input type="checkbox" class="custom-control-input " id="customSwitch1" onclick="darkMode()">
+      <label class="custom-control-label" for="customSwitch1">Dark Mode</label>
+    </div>
     <div>
-      <div class="custom-control custom-switch toggle">
-        <input type="checkbox" class="custom-control-input " id="customSwitch1" onclick="darkMode()">
-        <label class="custom-control-label" for="customSwitch1">Dark Mode</label>
-      </div>
       <div class="dice">
         <input type="text" name="player1" placeholder="Name-Player1" id="p1" class="light" required>
         <p id="pn1"></p>
