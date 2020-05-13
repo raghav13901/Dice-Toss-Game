@@ -86,10 +86,10 @@ input{
   }
   .toggle{
     font-size: 90%;
-    position: absolute;
+    position: relative;
     right: 1%;
-    top: 190px;
-    margin-left: 10px;
+    top: 0;
+    margin: 5px 5px 0;
   }
 
 }
