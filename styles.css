@@ -45,7 +45,7 @@ h2 {
 }
 .toggle{
   font-size:85%;
-  position: fixed;
+  position: absolute;
   top: 8%;
   right: 6%;
 }
@@ -75,17 +75,21 @@ input{
 }
 @media screen and (max-width:600px) {
   h2{
-    font-size: 250%;
+    font-size: 225%;
   }
   img{
-    width:60%;
+    max-width: 60%;
   }
   input{
     margin-top: 40px;
+    max-width: 80%;
   }
   .toggle{
+    font-size: 90%;
     position: absolute;
-    left: -70%;
+    right: 1%;
     top: 190px;
+    margin-left: 10px;
   }
+
 }
